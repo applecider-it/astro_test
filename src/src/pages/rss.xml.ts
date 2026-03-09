@@ -1,7 +1,7 @@
 import rss from '@astrojs/rss';
 import type { APIRoute } from 'astro';
 import { getCollection } from 'astro:content';
-import type { Post } from '../types/types';
+import type { Post } from '@/types/types';
 
 // RSS生成用
 export const GET: APIRoute = async (context) => {
