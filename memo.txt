@@ -32,3 +32,5 @@ php -S localhost:4322 -t dist
 http://localhost:4322/
 
 http://localhost:4322/rss.xml
+
+http://localhost:4322/sitemap-index.xml
