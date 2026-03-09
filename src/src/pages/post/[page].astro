@@ -62,7 +62,7 @@ const { page } = Astro.props as { page: Page<Post> };
     {
       Array.from({ length: page.lastPage }).map((_, i) => {
         const pageNumber = i + 1;
-        const url = `/blog/${pageNumber}`;
+        const url = `/post/${pageNumber}`;
         const isActive = pageNumber === page.currentPage;
 
         return (
