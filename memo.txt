@@ -1,0 +1,6 @@
+
+cd /home/owner/workspace/tmp/astro_test
+
+-----------------------------------
+
+
