@@ -12,6 +12,8 @@ astro: 4321
 
 npm run dev
 
+foreman start
+
 -----------------------------------
 
 http://localhost:4321/
