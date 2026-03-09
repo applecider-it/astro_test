@@ -7,3 +7,4 @@ npx tailwindcss init -p
 
 npm install @astrojs/rss
 
+npm install swiper
