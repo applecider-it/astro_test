@@ -1,0 +1,37 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout>
+  <section class="bg-gray-50 py-20">
+    <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+      <!-- Image -->
+      <div>
+        <img src="/favicon.svg" alt="about" class="rounded-2xl shadow-lg" />
+      </div>
+
+      <!-- Text -->
+      <div>
+        <h2 class="text-4xl font-bold mb-6">About Me</h2>
+
+        <p class="text-gray-600 mb-4 leading-relaxed">
+          私はWeb開発を中心に活動している開発者です。
+          モダンなフロントエンド技術を使い、
+          シンプルで使いやすいUIを作ることが好きです。
+        </p>
+
+        <p class="text-gray-600 mb-6 leading-relaxed">
+          Astro / Tailwind / TypeScript などを使って
+          高速でメンテナンスしやすいWebサイトを作っています。
+        </p>
+
+        <a
+          href="/contact"
+          class="inline-block bg-indigo-500 text-white px-6 py-3 rounded-lg hover:bg-indigo-600 transition"
+        >
+          Contact Me
+        </a>
+      </div>
+    </div>
+  </section>
+</Layout>
