@@ -3,9 +3,30 @@ cd /home/owner/workspace/tmp/astro_test/src
 
 -----------------------------------
 
+port
+
+astro: 4321
+確認用php: 4322
+
+-----------------------------------
+
 npm run dev
 
 -----------------------------------
 
 http://localhost:4321/
+
+
+-----------------------------------
+
+ビルド
+
+npm run build
+
+
+確認
+
+php -S localhost:4322 -t dist
+
+http://localhost:4322/
 
