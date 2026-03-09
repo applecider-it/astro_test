@@ -1,0 +1,43 @@
+---
+const desktopClass = 'hover:text-indigo-500';
+const mobileClass = 'block py-2 text-gray-700 hover:text-indigo-500';
+---
+
+<header class="bg-white shadow-md">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+    <!-- Logo -->
+    <div
+      class="text-2xl font-bold bg-gradient-to-r from-indigo-500 to-purple-500 bg-clip-text text-transparent"
+    >
+      MySite
+    </div>
+
+    <!-- Desktop Menu -->
+    <nav class="hidden md:flex space-x-8 text-gray-700 font-medium">
+      <a href="#" class={desktopClass}>Home</a>
+      <a href="#" class={desktopClass}>About</a>
+      <a href="#" class={desktopClass}>Services</a>
+      <a href="#" class={desktopClass}>Contact</a>
+    </nav>
+
+    <!-- Mobile Button -->
+    <button id="menuBtn" class="md:hidden text-2xl"> ☰ </button>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobileMenu" class="hidden px-6 pb-4 md:hidden">
+    <a href="#" class={mobileClass}>Home</a>
+    <a href="#" class={mobileClass}>About</a>
+    <a href="#" class={mobileClass}>Services</a>
+    <a href="#" class={mobileClass}>Contact</a>
+  </div>
+</header>
+
+<script type="module">
+  const btn = document.getElementById('menuBtn');
+  const menu = document.getElementById('mobileMenu');
+
+  btn.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+  });
+</script>

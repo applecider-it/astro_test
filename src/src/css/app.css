@@ -6,14 +6,25 @@
   /* ボタン */
 
   .app-btn {
-    @apply font-semibold px-4 py-2 rounded transition;
+    @apply px-4 py-2 rounded-lg;
   }
   .app-btn-primary {
-    @apply app-btn bg-blue-500 hover:bg-blue-600 text-white;
+    @apply app-btn bg-blue-500 text-white hover:bg-blue-600;
   }
-  
+  .app-btn-indigo {
+    @apply app-btn bg-indigo-500 text-white hover:bg-indigo-600;
+  }
+  .app-btn-purple {
+    @apply app-btn bg-purple-500 text-white hover:bg-purple-600;
+  }
+
   /* 通常のリンク */
   .app-link-normal {
     @apply text-blue-600 hover:underline;
+  }
+
+  /* カード */
+  .app-card {
+    @apply bg-white rounded-2xl shadow-xl p-6 hover:scale-105 transition
   }
 }
