@@ -8,3 +8,9 @@ npx tailwindcss init -p
 npm install @astrojs/rss
 
 npm install swiper
+
+npx astro add vue
+
+npm install alpinejs
+
+npm i --save-dev @types/alpinejs
