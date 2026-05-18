@@ -23,7 +23,7 @@ const { page } = Astro.props as { page: Page<Post> };
       {
         page.data.map((post: Post) => (
           <a
-            href={`/article/${post.slug}`}
+            href={`/post/${post.slug}`}
             class="block bg-white rounded-2xl shadow hover:shadow-xl transition p-6"
           >
             <h2 class="text-xl font-semibold mb-2">{post.data.title}</h2>

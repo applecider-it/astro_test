@@ -39,7 +39,7 @@ const { page } = Astro.props as { page: Page<Post> };
       {
         page.data.map((post) => (
           <li class="border-b border-gray-200 pb-4">
-            <a href={`/article/${post.slug}/`} class="block group">
+            <a href={`/post/${post.slug}/`} class="block group">
               <h3 class="text-xl font-semibold text-gray-800 group-hover:text-blue-600 transition">
                 {post.data.title}
               </h3>
