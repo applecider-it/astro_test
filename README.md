@@ -2,9 +2,11 @@
 
 Astroは、シンプルに利用するべき。
 
-普通のサイトのようにしたいなら、素直に、laravel, railsにしたほうがいい。
+普通のサイトのようにしたいなら、素直に、`laravel-app`, `rails-app`のようなハイブリッドMPAにしたほうがいい。
 
-Astro + cloudflare pages / workers だと、セキュリティリスクがほとんどなくなるため、シンプルなシステムの場合は、都合がいい。
+Astro + cloudflare pagesだと、セキュリティリスクがほとんどなくなるため、シンプルなシステムの場合は、都合がいい。
+
+ただし、+ cloudflare workersになると、コード上のセキュリティリスクが出てくるので、laravel, railsをPaasで使うときのセキュリティリスクに近づくと思う。
 
 
 # リンク
