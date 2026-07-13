@@ -42,6 +42,8 @@ export default class ChatClient {
 
   /** サーバーにメッセージ送信 */
   sendMessage(message: string) {
+    if (!message) return;
+
     // JSON形式で送信（サーバー側でそのままbroadcastされる想定）
     this.ws.send(JSON.stringify({ message }));
   }

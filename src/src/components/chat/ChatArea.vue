@@ -3,7 +3,7 @@ import { ref, onMounted } from 'vue';
 import ChatClient from '@/services/chat/ChatClient';
 import { getRoomInfo } from '@/services/chat/room';
 
-const message = ref<string>('メッセージテスト');
+const message = ref<string>('');
 const messages = ref<any[]>([]);
 
 const room = ref<string>('');
@@ -16,6 +16,7 @@ const handleSubmit = async (e: Event) => {
   e.preventDefault();
 
   chatClient!.sendMessage(message.value);
+  message.value = '';
 };
 
 // 初期化時
@@ -48,7 +49,7 @@ onMounted(async () => {
 
     <form @submit="handleSubmit" class="space-y-4">
       <div>内容</div>
-      <textarea v-model="message" class="app-form-input" required></textarea>
+      <textarea v-model="message" class="app-form-input"></textarea>
       <button type="submit" class="app-btn-primary">送信</button>
     </form>
 
