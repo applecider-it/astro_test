@@ -8,7 +8,7 @@ Astro + cloudflare pagesだと、セキュリティリスクがほとんどな�
 
 ただし、+ cloudflare workersになると、コード上のセキュリティリスクが出てくるので、laravel, railsをPaaSで使うときのセキュリティリスクに近づくと思う。
 
-実装例では、+ cloudflare workersで、いろいろ動かしているけど、利用は非推奨。
+実装例では、+ cloudflare workersで、いろいろ動かしているけど、これが必要な時点で、ハイブリッドMPAにしたほうが無難だと思う。
 
 ## Astroのポジション
 
